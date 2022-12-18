@@ -1,6 +1,7 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 const Subscription = () => {
+    const [input, setInput] = useState('')
   return (
     <div className="bg-black w-screen text-white "> 
         <div className="px-4 py-20 grid lg:grid-cols-2 lg:px-40 mx-auto">
@@ -22,7 +23,9 @@ const Subscription = () => {
                     <input 
                     type="email"
                     placeholder="Enter your email"
-                    className="rounded-md h-10 w-64 p-3"
+                    className="rounded-md h-10 w-64 p-3 text-black"
+                    onChange={(e) => setInput(e.target.value)}
+                    value={input}
                     />
                     <button className="bg-[#00df9a] rounded-md text-black font-medium w-[200px] h-10 whitespace-nowrap text-ellipsis">
                         Notify me
