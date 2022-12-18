@@ -3,8 +3,8 @@ import Typed from 'react-typed'
 
 const Hero = () => {
   return (
-    <div className="text-white " >
-        <div className="flex justify-center flex-col w-full h-screen text-center mx-auto mt-[-96px] max-w-[800px]">
+    <div className="text-white  " >
+        <div className="flex justify-center flex-col w-full h-screen text-center mx-auto lg:mt-[-96px] max-w-[800px]">
             <p className='text-[#00df9a] uppercase font-semibold ' >
                 Growing with data analytics
             </p>
